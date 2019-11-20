@@ -1,0 +1,30 @@
+{
+  "name": "node-project-template",
+  "version": "0.0.1",
+  "description": "A simple repo template to quickly bootstrap a new node project",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "lint-staged": {
+    "*.js": "./node_modules/eslint/bin/eslint.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "pre-commit": "lint-staged",
+  "keywords": [
+    "template",
+    "node",
+    "nodejs",
+    "starter",
+    "starter-kit"
+  ],
+  "author": "Chris Kalmar <christian.kalmar@gmail.com>",
+  "license": "MIT"
+}
