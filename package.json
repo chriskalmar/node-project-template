@@ -3,6 +3,21 @@
   "version": "0.0.1",
   "description": "A simple repo template to quickly bootstrap a new node project",
   "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "lint-staged": "lint-staged",
+    "coverage": "NODE_ENV=test jest --coverage",
+    "coverage-ci": "npm run coverage && cat ./coverage/lcov.info | codecov",
+    "build": "mkdir -p lib; npm run test && NODE_ENV=build babel src -d lib --verbose",
+    "build-watch": "mkdir -p lib; NODE_ENV=build babel src -w -d lib --verbose",
+    "dev": "nodemon --exec babel-node -r loadEnv.js src/",
+    "start": "NODE_ENV=production node src/index.js",
+    "release": "np --no-publish"
+  },
   "files": [
     "lib"
   ],
