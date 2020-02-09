@@ -59,7 +59,7 @@
     "nodemon": "1.19.4",
     "prettier": "1.19.1",
     "prettier-eslint": "9.0.0",
-    "rimraf": "3.0.0"
+    "rimraf": "3.0.2"
   },
   "dependencies": {
     "dotenv": "^8.2.0"
