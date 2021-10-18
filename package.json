@@ -55,7 +55,7 @@
     "eslint-config-prettier": "6.7.0",
     "husky": "3.1.0",
     "jest": "24.9.0",
-    "lint-staged": "9.4.2",
+    "lint-staged": "11.2.3",
     "nodemon": "1.19.4",
     "prettier": "1.19.1",
     "prettier-eslint": "9.0.0",
